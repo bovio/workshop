@@ -8,8 +8,9 @@
 # The secret name in the YAML file must match the secret name in GitHub Actions secrets.
 
 name: Engineering
-custom_settings:
-  - path: ../lib/macos-password.mobileconfig
+macos_settings:
+  custom_settings:
+    - path: ../lib/macos-password.mobileconfig
 policies:
   - path: ../lib/macos-device-health.policies.yml
   - path: ../lib/windows-device-health.policies.yml
