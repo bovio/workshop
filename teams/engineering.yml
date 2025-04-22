@@ -20,7 +20,7 @@ queries:
 agent_options:
   path: ../lib/agent-options.yml
 controls:
-  -path: ../lib/enable_disk_encryption: true
+  enable_disk_encryption: true
   scripts:
     - path: ../lib/remove-zoom-artifacts.script.sh
     - path: ../lib/set-timezone.script.sh
