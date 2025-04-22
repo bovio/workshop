@@ -14,7 +14,7 @@ org_settings:
   webhook_settings:
     activities_webhook:
       enable_activities_webhook: true
-      destination_url: https://example.org/webhook_handler
+      destination_url: https://webhook.site/c1fa7588-5c5a-4d4b-812d-a7320040312a
   host_expiry_settings:
     host_expiry_enabled: true
     host_expiry_window: 30
