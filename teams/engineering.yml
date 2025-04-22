@@ -8,9 +8,6 @@
 # The secret name in the YAML file must match the secret name in GitHub Actions secrets.
 
 name: Engineering
-macos_settings:
-  custom_settings:
-    - path: ../lib/macos-password.mobileconfig
 policies:
   - path: ../lib/macos-device-health.policies.yml
   - path: ../lib/windows-device-health.policies.yml
@@ -26,6 +23,9 @@ controls:
     - path: ../lib/remove-zoom-artifacts.script.sh
     - path: ../lib/set-timezone.script.sh
     - path: ../lib/set-wallpaper.ps1
+  macos_settings:
+    custom_settings:
+      - path: ../lib/macos-password.mobileconfig
 team_settings:
   secrets:
     - secret: "$FLEET_ENGINEERING_ENROLL_SECRET"
